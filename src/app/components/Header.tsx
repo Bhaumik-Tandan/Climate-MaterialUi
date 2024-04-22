@@ -1,11 +1,11 @@
 import React from 'react';
 import { AppBar, Toolbar, InputBase, IconButton, Typography, Box } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
+import Profile from "../assets/Profile.png";
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Image from 'next/image';
 import Group from "../assets/Group.png";
 import Search from "../assets/Search.png";
+import Notification from "../assets/Notification.png";
 
 const Header = () => {
   return (
@@ -41,16 +41,12 @@ const Header = () => {
     </Box>
           
     </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', px: 1 }}> {/* Added horizontal padding here */}
-          <IconButton color="inherit">
-            <LockOutlinedIcon />
-          </IconButton>
+        <Box sx={{ display: 'flex', alignItems: 'center', px: 3}}> 
+            <Image src={Notification} alt="Notification" width="48" height="48" />
+            <Image src={Profile} alt="Profile" width="48" height="48" />
           <Typography variant="subtitle1" component="div" sx={{ mr: 2 }}>
             Shailesh Vickram
           </Typography>
-          <IconButton color="inherit">
-            <AccountCircle />
-          </IconButton>
         </Box>
       </Toolbar>
     </AppBar>
