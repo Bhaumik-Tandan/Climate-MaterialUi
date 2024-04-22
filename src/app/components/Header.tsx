@@ -13,6 +13,7 @@ const Header = () => {
     sx={{ backgroundColor: '#ffffff' }}
     >
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider', justifyContent: 'space-between', py: 2 }}> 
+      <Box sx={{ display: 'flex', flexDirection: 'row',justifyContent:"space-between" }}>
         <Box sx={{ display: 'flex', alignItems: 'center', px: 3 }}> 
             <Image src={Group} alt="Climate Angels" width="48.45" height="48"
             style={{ paddingRight: '10px' }}
@@ -22,10 +23,11 @@ const Header = () => {
           </Typography>
         </Box>
 
-        <Box sx={{ display: 'flex', alignItems: 'center',     width: '320px',
-    padding: '10px',
+        <Box sx={{ display: 'flex', alignItems: 'center',  width: '300px',
+    padding: '5px',
     border: '1px solid #C0C0C0',
-    borderRadius: '8px' }}> 
+    borderRadius: '8px',
+     }}> 
       <Image
         alt="search"
         src={Search}
@@ -38,7 +40,7 @@ const Header = () => {
       />
     </Box>
           
-
+    </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', px: 1 }}> {/* Added horizontal padding here */}
           <IconButton color="inherit">
             <LockOutlinedIcon />
